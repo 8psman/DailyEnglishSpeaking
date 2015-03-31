@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tannv.dailyenglishspeaking"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="21" />
+
+    <!-- Internet permission -->
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.SET_DEBUG_APP" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+        <activity
+            android:name="com.tannv.dailyenglishspeaking.MainScreen"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.tannv.dailyenglishspeaking.MenuScreen" >
+        </activity>
+        <activity android:name="com.tannv.dailyenglishspeaking.ListeningOnline" >
+        </activity>
+        <activity android:name="com.tannv.dailyenglishspeaking.TopicsActivity" >
+        </activity>
+        <activity android:name="com.tannv.dailyenglishspeaking.LessonFullClass" >
+        </activity>
+        <activity android:name="com.tannv.dailyenglishspeaking.ChoosePartListen" >
+        </activity>
+        <activity android:name="com.tannv.dailyenglishspeaking.ActivityListening" >
+        </activity>
+        <activity android:name="com.tannv.dailyenglishspeaking.MainActivity" >
+        </activity>
+        <activity android:name="com.tannv.dailyenglishspeaking.ListeningOff1" >
+        </activity>
+        <activity android:name="com.tannv.dailyenglishspeaking.ListeningOff2" >
+        </activity>
+        <activity android:name="com.tannv.dailyenglishspeaking.HowToStudying" >
+        </activity>
+        <activity android:name="com.tannv.dailyenglishspeaking.Pronunciation" >
+        </activity>
+        <activity android:name="com.tannv.dailyenglishspeaking.Introduction" >
+        </activity>
+        <activity android:name="com.tannv.dailyenglishspeaking.SingleContactActivity" >
+        </activity>
+        <activity android:name="com.tannv.dailyenglishspeaking.Thefirstlesson" >
+        </activity>
+        <activity android:name="com.tannv.dailyenglishspeaking.FaceBook" >
+        </activity>
+        <activity android:name="com.tannv.dailyenglishspeaking.VideoActivity" >
+        </activity>
+        <activity android:name="com.tannv.dailyenglishspeaking.TopicSpeaking" >
+        </activity>
+        <activity android:name="com.tannv.dailyenglishspeaking.ListeningVoa" >
+        </activity>
+        <activity android:name="com.tannv.dailyenglishspeaking.Listening365" >
+        </activity>
+        <activity android:name="com.tannv.dailyenglishspeaking.ListeningFromSong" >
+        </activity>
+        <activity android:name="com.tannv.dailyenglishspeaking.VideoViewSample" >
+        </activity>
+        <activity android:name="com.tannv.dailyenglishspeaking.VideoViewPlayer" >
+        </activity>
+        <activity android:name="com.tannv.dailyenglishspeaking.ComunityActivity" >
+        </activity>
+        <activity android:name="com.tannv.dailyenglishspeaking.btnclick" >
+        </activity>
+        <activity android:name="com.tannv.dailyenglishspeaking.ActivityShareSociety" >
+        </activity>
+        <activity android:name="com.tannv.dailyenglishspeaking.ActivitySendemail" >
+        </activity>
+        <activity android:name="com.tannv.dailyenglishspeaking.ActivityInterview" >
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+    </application>
+
+</manifest>
